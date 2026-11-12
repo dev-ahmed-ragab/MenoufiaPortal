@@ -1,0 +1,17 @@
+{
+  "name": "menoufia-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "استمارة طلب انضمام تجريبية — أمانة حزب مستقبل وطن بمحافظة المنوفية",
+  "scripts": {
+    "build:css": "tailwindcss -c tailwind.config.js -i ./assets/css/input.css -o ./assets/css/tailwind.css --minify",
+    "watch:css": "tailwindcss -c tailwind.config.js -i ./assets/css/input.css -o ./assets/css/tailwind.css --watch",
+    "serve": "npx --yes serve ."
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

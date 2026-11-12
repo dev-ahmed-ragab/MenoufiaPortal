@@ -1,0 +1,21 @@
+{
+  "name": "حزب مستقبل وطن - أمانة المنوفية",
+  "short_name": "مستقبل وطن المنوفية",
+  "description": "استمارة طلب انضمام تجريبية — أمانة حزب مستقبل وطن بمحافظة المنوفية",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f1f5f9",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "assets/img/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
