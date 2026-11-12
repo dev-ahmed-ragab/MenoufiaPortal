@@ -39,7 +39,6 @@
     checkStorageAvailability();
     bindEvents();
     setFooterYear();
-    updateNotesCount();
   }
 
   function cacheElements() {
@@ -56,7 +55,6 @@
     els.phone = document.getElementById('phone');
     els.village = document.getElementById('village');
     els.notes = document.getElementById('notes');
-    els.notesCount = document.getElementById('notesCount');
     els.consent = document.getElementById('consent');
     els.submitBtn = document.getElementById('submitBtn');
     els.submitBtnText = document.getElementById('submitBtnText');
@@ -101,7 +99,6 @@
     els.fullName.addEventListener('input', function () {
       els.fullName.setCustomValidity('');
     });
-    els.notes.addEventListener('input', updateNotesCount);
 
     els.personalPhoto.addEventListener('change', function () {
       handleFileChange('personalPhoto');
@@ -254,13 +251,6 @@
     els.fullName.setCustomValidity('');
     clearPhoto('personalPhoto');
     clearPhoto('idCardPhoto');
-    updateNotesCount();
-  }
-
-  function updateNotesCount() {
-    if (els.notesCount) {
-      els.notesCount.textContent = String(els.notes.value.length);
-    }
   }
 
   function handlePhoneInput() {

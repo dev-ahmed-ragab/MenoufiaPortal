@@ -53,16 +53,16 @@
   <a href="#mainContent" class="sr-only focus:not-sr-only focus:absolute focus:right-2 focus:top-2 focus:z-[80] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-bold focus:text-blue-900 focus:shadow-lg">تجاوز إلى المحتوى</a>
 
   <header class="gradient-header no-print sticky top-0 z-40 border-b-4 border-amber-500 text-white shadow-lg">
-    <div class="mx-auto flex max-w-6xl items-center justify-between gap-2 px-3 py-2.5 sm:gap-3 sm:px-4 sm:py-3">
-      <a href="#welcomeScreen" class="flex min-w-0 items-center gap-2.5 rounded-lg sm:gap-3" data-action="go-home" aria-label="العودة للصفحة الرئيسية">
-        <img src="assets/img/logo.svg" class="h-11 w-11 shrink-0 rounded-xl border-2 border-amber-400 bg-white p-0.5 object-contain sm:h-14 sm:w-14" alt="شعار حزب مستقبل وطن">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
+      <a href="#welcomeScreen" class="flex min-w-0 items-center gap-3 rounded-lg" data-action="go-home" aria-label="العودة للصفحة الرئيسية">
+        <img src="assets/img/logo.svg" class="h-12 w-12 shrink-0 rounded-xl border-2 border-amber-400 bg-white p-0.5 object-contain sm:h-14 sm:w-14" alt="شعار حزب مستقبل وطن">
         <span class="min-w-0">
-          <span class="block truncate text-sm font-black leading-tight text-amber-300 sm:text-lg md:text-xl">حزب مستقبل وطن</span>
-          <span class="mt-0.5 block truncate text-[11px] leading-tight text-blue-100 sm:text-xs">أمانة محافظة المنوفية</span>
+          <span class="block truncate text-base font-black leading-tight text-amber-300 md:text-xl">حزب مستقبل وطن</span>
+          <span class="mt-0.5 block truncate text-xs leading-tight text-blue-100">أمانة محافظة المنوفية</span>
         </span>
       </a>
 
-      <button type="button" class="inline-flex min-h-[44px] shrink-0 items-center justify-center gap-2 rounded-xl bg-amber-400 px-3 py-2 text-xs font-black text-slate-950 shadow-md transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white active:scale-[.98] sm:px-4 sm:text-sm" data-action="open-admin" aria-label="فتح إدارة النظام">
+      <button type="button" class="inline-flex min-h-[44px] shrink-0 items-center justify-center gap-2 rounded-lg bg-amber-500 px-3 py-2 text-xs font-black text-slate-950 shadow-md transition hover:bg-amber-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white active:scale-[.98] sm:px-4 sm:text-sm" data-action="open-admin" aria-label="فتح إدارة النظام">
         <svg class="icon" aria-hidden="true"><use href="#i-lock"></use></svg>
         <span class="hidden xs:inline">إدارة النظام</span>
         <span class="xs:hidden">الإدارة</span>
@@ -73,230 +73,177 @@
   <main id="mainContent" class="mx-auto my-4 w-full max-w-4xl flex-1 px-3 pb-8 sm:my-6 sm:px-4">
 
     <!-- ==================== Welcome ==================== -->
-    <section id="welcomeScreen" class="overflow-hidden rounded-2xl border border-slate-200 border-t-8 border-t-blue-900 bg-white shadow-xl" aria-labelledby="welcomeTitle">
-      <div class="px-4 pb-7 pt-6 text-center sm:px-8 sm:pb-10 sm:pt-8">
+    <section id="welcomeScreen" class="rounded-2xl border-t-8 border-blue-900 bg-white p-6 text-center shadow-xl md:p-10" aria-labelledby="welcomeTitle">
 
-        <div class="mb-5 flex items-center justify-center gap-4 sm:gap-6">
-          <img src="assets/img/egypt-flag.svg" alt="علم جمهورية مصر العربية" class="h-[4.5rem] w-[6.75rem] rounded-lg border border-slate-200 object-cover shadow-md sm:h-24 sm:w-36" width="144" height="96" loading="eager">
-          <img src="assets/img/logo.svg" alt="شعار حزب مستقبل وطن" class="h-20 w-20 rounded-full border-4 border-amber-400 bg-white p-1 object-contain shadow-xl sm:h-28 sm:w-28" width="112" height="112" loading="eager">
-        </div>
+      <img src="assets/img/egypt-flag.svg" alt="علم جمهورية مصر العربية" class="mx-auto mb-5 h-auto w-44 rounded-md border shadow-lg sm:w-56" width="224" height="149" loading="eager">
 
-        <h2 id="welcomeTitle" class="text-2xl font-black leading-tight text-slate-900 sm:text-3xl">حزب مستقبل وطن</h2>
-        <p class="mt-2 text-base font-bold text-amber-700 sm:text-lg">أمانة محافظة المنوفية</p>
+      <img src="assets/img/logo.svg" alt="شعار حزب مستقبل وطن" class="mx-auto mb-5 h-36 w-36 rounded-full border-4 border-amber-500 bg-white p-1 object-contain shadow-xl" width="144" height="144" loading="eager">
 
-        <p class="mx-auto mt-3 max-w-md text-sm font-bold leading-7 text-blue-900 sm:text-base">
-          <span class="waving-motto inline-block">كلنا نعمل من أجل مصر</span>
-        </p>
+      <h2 id="welcomeTitle" class="mb-2 text-2xl font-black text-slate-900 md:text-3xl">حزب مستقبل وطن</h2>
 
-        <div class="mx-auto mt-5 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-[11px] font-bold text-emerald-800 sm:text-xs">
-          <svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg>
-          نسخة تجريبية — بياناتك لا تُرسل لأي خادم
-        </div>
+      <p class="mb-6 text-lg font-bold text-amber-600">
+        <span class="waving-motto">أمانة محافظة المنوفية — كلنا نعمل من أجل مصر</span>
+      </p>
 
-        <div class="mx-auto mt-7 grid max-w-2xl gap-4 text-right">
-          <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
-            <div class="mb-3 flex items-center gap-2 text-sm font-black text-blue-900">
-              <svg class="icon text-amber-600" aria-hidden="true"><use href="#i-users"></use></svg>
-              بيانات قيادات المحافظة
-            </div>
-            <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
-              <div class="rounded-lg border border-slate-200 bg-white p-3">
-                <span class="block text-[11px] font-semibold text-slate-500">أمين المحافظة</span>
-                <strong class="mt-0.5 block text-sm leading-6">النائب / سامر التلاوي</strong>
-              </div>
-              <div class="rounded-lg border border-slate-200 bg-white p-3">
-                <span class="block text-[11px] font-semibold text-slate-500">أمين التنظيم بالمحافظة</span>
-                <strong class="mt-0.5 block text-sm leading-6">الأستاذ / محمد بط</strong>
-              </div>
-            </div>
+      <div class="mx-auto mb-4 max-w-2xl rounded-xl border bg-slate-50 p-4 text-right">
+        <div class="mb-3 font-bold text-blue-900">بيانات قيادات المحافظة</div>
+        <div class="grid grid-cols-1 gap-2 text-center sm:grid-cols-2">
+
+          <div class="rounded-lg border bg-white p-3">
+            <span class="block text-xs text-gray-500">أمين المحافظة</span>
+            <strong class="text-sm">النائب / سامر التلاوي</strong>
           </div>
 
-          <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
-            <div class="mb-3 flex items-center gap-2 text-sm font-black text-blue-900">
-              <svg class="icon text-amber-600" aria-hidden="true"><use href="#i-map-pin"></use></svg>
-              بيانات قيادات مركز بركة السبع
-            </div>
-            <div class="grid grid-cols-1 gap-2 sm:grid-cols-3">
-              <div class="rounded-lg border border-slate-200 bg-white p-3">
-                <span class="block text-[11px] font-semibold text-slate-500">أمين المركز</span>
-                <strong class="mt-0.5 block text-sm leading-6">الأستاذ / محمد هلال</strong>
-              </div>
-              <div class="rounded-lg border border-slate-200 bg-white p-3">
-                <span class="block text-[11px] font-semibold text-slate-500">أمين التنظيم</span>
-                <strong class="mt-0.5 block text-sm leading-6">الأستاذ / محمود الجزار</strong>
-              </div>
-              <div class="rounded-lg border border-slate-200 bg-white p-3">
-                <span class="block text-[11px] font-semibold text-slate-500">أمين العضوية</span>
-                <strong class="mt-0.5 block text-sm leading-6">الأستاذ / إيهاب خليل</strong>
-              </div>
-            </div>
+          <div class="rounded-lg border bg-white p-3">
+            <span class="block text-xs text-gray-500">أمين التنظيم بالمحافظة</span>
+            <strong class="text-sm">الأستاذ / محمد بط</strong>
           </div>
-        </div>
 
-        <div class="mx-auto mt-7 max-w-md">
-          <button type="button" class="inline-flex min-h-[56px] w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-l from-blue-900 to-blue-700 px-7 py-4 text-lg font-black text-white shadow-xl shadow-blue-900/20 transition hover:from-blue-800 hover:to-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500 active:scale-[.99]" data-action="start-registration">
-            <svg class="icon text-amber-400" aria-hidden="true"><use href="#i-id-card"></use></svg>
-            طلب الانضمام
-          </button>
-          <p class="mt-3 text-[11px] font-semibold leading-6 text-slate-500">يستغرق دقيقتين • لا يتطلب رفع مستندات حقيقية</p>
         </div>
-
       </div>
+
+      <div class="mx-auto mb-8 max-w-2xl rounded-xl border bg-slate-50 p-4 text-right">
+        <div class="mb-3 font-bold text-blue-900">بيانات قيادات مركز بركة السبع</div>
+        <div class="grid grid-cols-1 gap-2 text-center sm:grid-cols-3">
+
+          <div class="rounded-lg border bg-white p-3">
+            <span class="block text-xs text-gray-500">أمين المركز</span>
+            <strong class="text-sm">الأستاذ / محمد هلال</strong>
+          </div>
+
+          <div class="rounded-lg border bg-white p-3">
+            <span class="block text-xs text-gray-500">أمين التنظيم</span>
+            <strong class="text-sm">الأستاذ / محمود الجزار</strong>
+          </div>
+
+          <div class="rounded-lg border bg-white p-3">
+            <span class="block text-xs text-gray-500">أمين العضوية</span>
+            <strong class="text-sm">الأستاذ / إيهاب خليل</strong>
+          </div>
+
+        </div>
+      </div>
+
+      <button type="button" class="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-blue-900 to-blue-700 px-7 py-4 text-lg font-extrabold text-white shadow-xl transition hover:from-blue-800 hover:to-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500 active:scale-[.99] sm:w-auto" data-action="start-registration">
+        <svg class="icon text-amber-400" aria-hidden="true"><use href="#i-id-card"></use></svg>
+        طلب الانضمام
+      </button>
+
     </section>
 
     <!-- ==================== Registration form ==================== -->
-    <section id="registrationFormContainer" class="rounded-2xl border border-slate-200 border-t-8 border-t-amber-500 bg-white shadow-xl" hidden aria-labelledby="formTitle">
-      <div class="p-4 sm:p-6 md:p-8">
+    <section id="registrationFormContainer" class="rounded-2xl border-t-8 border-amber-500 bg-white p-6 shadow-xl md:p-8" hidden aria-labelledby="formTitle">
 
-        <div class="mb-6 flex items-start justify-between gap-3 border-b border-slate-200 pb-4">
-          <div>
-            <h2 id="formTitle" class="text-lg font-black leading-tight text-slate-900 sm:text-xl">استمارة طلب الانضمام</h2>
-            <p class="mt-1 text-[11px] text-slate-500 sm:text-xs">يرجى إدخال بيانات التواصل بدقة</p>
-          </div>
-          <button type="button" class="inline-flex min-h-[44px] shrink-0 items-center gap-1.5 rounded-lg px-2 text-sm font-bold text-slate-500 transition hover:bg-slate-100 hover:text-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-800" data-action="back-home">
-            <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
-            الرئيسية
-          </button>
+      <div class="mb-6 flex items-center justify-between gap-3 border-b pb-4">
+        <div>
+          <h2 id="formTitle" class="text-xl font-bold">استمارة طلب الانضمام</h2>
+          <p class="text-xs text-slate-500">يرجى إدخال بيانات التواصل بدقة</p>
         </div>
-
-        <div class="mb-6 flex gap-3 rounded-xl border border-amber-300 bg-amber-50 p-3 text-[11px] leading-6 text-amber-900 sm:text-xs" role="note">
-          <svg class="icon mt-0.5 shrink-0 text-amber-700" aria-hidden="true"><use href="#i-alert"></use></svg>
-          <p>
-            <strong class="font-black">تنبيه لحماية بياناتك:</strong>
-            هذه نسخة تجريبية تعمل داخل المتصفح فقط. لا تدخل الرقم القومي أو ترفع صورة البطاقة الحقيقية؛ لا يوجد خادم آمن لاستقبال المستندات حتى الآن.
-          </p>
-        </div>
-
-        <form id="membershipForm" class="space-y-6" autocomplete="on">
-
-          <fieldset class="space-y-4">
-            <legend class="mb-3 flex w-full items-center gap-2 text-sm font-black text-blue-900">
-              <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-blue-900 text-xs font-black text-white">1</span>
-              بيانات التواصل
-            </legend>
-
-            <div class="grid gap-4 sm:grid-cols-2">
-              <div>
-                <label for="centerSelect" class="mb-2 block text-sm font-bold">المركز التنظيمي <span class="text-red-600" aria-hidden="true">*</span></label>
-                <select id="centerSelect" name="center" required class="field">
-                  <option value="" disabled selected>-- اختر المركز التابع له --</option>
-                  <option>مركز بركة السبع</option>
-                  <option>مركز قويسنا</option>
-                  <option>مركز أشمون</option>
-                  <option>مركز منوف</option>
-                  <option>مركز سرس الليان</option>
-                  <option>مركز الباجور</option>
-                  <option>مركز تلا</option>
-                  <option>مركز الشهداء</option>
-                  <option>مركز شبين الكوم</option>
-                  <option>مركز السادات</option>
-                </select>
-              </div>
-
-              <div>
-                <label for="governorate" class="mb-2 block text-sm font-bold">المحافظة</label>
-                <input id="governorate" name="governorate" value="محافظة المنوفية" disabled class="field bg-slate-100 font-bold text-slate-600">
-              </div>
-            </div>
-
-            <div class="grid gap-4 sm:grid-cols-2">
-              <div>
-                <label for="fullName" class="mb-2 block text-sm font-bold">الاسم بالكامل <span class="text-red-600" aria-hidden="true">*</span></label>
-                <input id="fullName" name="fullName" required maxlength="100" autocomplete="name" placeholder="أدخل اسمك بالكامل" class="field" aria-describedby="fullNameHint">
-                <p id="fullNameHint" class="mt-1.5 text-[11px] text-slate-500">الاسم كما هو في بطاقة الرقم القومي.</p>
-              </div>
-
-              <div>
-                <label for="phone" class="mb-2 block text-sm font-bold">رقم الهاتف المحمول <span class="text-red-600" aria-hidden="true">*</span></label>
-                <input type="tel" id="phone" name="phone" required inputmode="numeric" maxlength="11" pattern="01[0125][0-9]{8}" autocomplete="tel" placeholder="01xxxxxxxxx" class="field" dir="ltr" aria-describedby="phoneHint" title="11 رقمًا يبدأ بـ 010 أو 011 أو 012 أو 015">
-                <p id="phoneHint" class="mt-1.5 text-[11px] text-slate-500">11 رقمًا تبدأ بـ 010 / 011 / 012 / 015.</p>
-              </div>
-            </div>
-
-            <div>
-              <label for="village" class="mb-2 block text-sm font-bold">القرية / المنطقة <span class="font-normal text-slate-400">(اختياري)</span></label>
-              <input id="village" name="village" maxlength="100" autocomplete="address-level3" placeholder="اسم القرية أو المنطقة" class="field">
-            </div>
-          </fieldset>
-
-          <fieldset class="space-y-4">
-            <legend class="mb-3 flex w-full items-center gap-2 text-sm font-black text-blue-900">
-              <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-blue-900 text-xs font-black text-white">2</span>
-              المستندات <span class="text-[11px] font-normal text-slate-500">(اختياري — للمعاينة فقط)</span>
-            </legend>
-
-            <div class="grid gap-4 sm:grid-cols-2">
-              <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
-                <div class="mb-1 flex items-center gap-2 text-sm font-bold">
-                  <svg class="icon text-blue-800" aria-hidden="true"><use href="#i-user"></use></svg>
-                  الصورة الشخصية
-                </div>
-                <p class="mb-3 text-[11px] leading-5 text-slate-500">JPG أو PNG أو WebP — بحد أقصى 8 ميجابايت.</p>
-                <input id="personalPhoto" name="personalPhoto" type="file" accept="image/png,image/jpeg,image/webp" class="file-input" aria-describedby="photoHint">
-                <p id="photoHint" class="sr-only">اختياري، تُعرض الصورة على جهازك فقط ولا تُحفظ.</p>
-                <div id="personalPhotoPreviewWrap" class="mt-3" hidden>
-                  <img id="personalPhotoPreview" alt="معاينة الصورة الشخصية" class="mx-auto h-36 w-28 rounded-lg border border-slate-300 bg-white object-cover shadow-sm">
-                  <button type="button" class="mt-2 inline-flex min-h-[36px] items-center gap-1 text-[11px] font-bold text-red-700 hover:underline" data-action="clear-photo" data-target="personalPhoto">
-                    <svg class="icon" aria-hidden="true"><use href="#i-trash"></use></svg>
-                    إزالة الصورة
-                  </button>
-                </div>
-              </div>
-
-              <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
-                <div class="mb-1 flex items-center gap-2 text-sm font-bold">
-                  <svg class="icon text-blue-800" aria-hidden="true"><use href="#i-id-card"></use></svg>
-                  صورة بطاقة الرقم القومي
-                </div>
-                <p class="mb-3 text-[11px] leading-5 text-slate-500">لا تستخدم صورة بطاقة حقيقية في النسخة التجريبية.</p>
-                <input id="idCardPhoto" name="idCardPhoto" type="file" accept="image/png,image/jpeg,image/webp" class="file-input" aria-describedby="idPhotoHint">
-                <p id="idPhotoHint" class="sr-only">اختياري، تُعرض الصورة على جهازك فقط ولا تُحفظ.</p>
-                <div id="idCardPhotoPreviewWrap" class="mt-3" hidden>
-                  <img id="idCardPhotoPreview" alt="معاينة صورة بطاقة الرقم القومي" class="mx-auto h-36 w-48 rounded-lg border border-slate-300 bg-white object-contain shadow-sm">
-                  <button type="button" class="mt-2 inline-flex min-h-[36px] items-center gap-1 text-[11px] font-bold text-red-700 hover:underline" data-action="clear-photo" data-target="idCardPhoto">
-                    <svg class="icon" aria-hidden="true"><use href="#i-trash"></use></svg>
-                    إزالة الصورة
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <p class="rounded-lg border border-amber-200 bg-amber-50 p-3 text-[11px] leading-6 text-amber-800">
-              الصور للمعاينة داخل الصفحة فقط، ولا تُرفع إلى خادم أو تُحفظ ضمن سجل الطلبات.
-            </p>
-          </fieldset>
-
-          <fieldset class="space-y-4">
-            <legend class="mb-3 flex w-full items-center gap-2 text-sm font-black text-blue-900">
-              <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-blue-900 text-xs font-black text-white">3</span>
-              ملاحظات وتأكيد
-            </legend>
-
-            <div>
-              <label for="notes" class="mb-2 block text-sm font-bold">ملاحظات <span class="font-normal text-slate-400">(اختياري)</span></label>
-              <textarea id="notes" name="notes" maxlength="500" rows="3" class="field resize-y" placeholder="أي معلومات إضافية"></textarea>
-              <p class="mt-1.5 text-left text-[11px] text-slate-400"><span id="notesCount">0</span> / 500</p>
-            </div>
-
-            <label class="flex cursor-pointer items-start gap-3 rounded-xl border border-slate-200 p-3 text-[11px] leading-6 text-slate-600 transition hover:bg-slate-50 sm:text-xs">
-              <input type="checkbox" id="consent" name="consent" required class="mt-1 h-5 w-5 shrink-0 accent-blue-900">
-              <span>أوافق على استخدام بيانات التواصل التي أدخلتها لغرض متابعة طلب التواصل، وأفهم أن هذه نسخة تجريبية محلية وليست قناة تسجيل رسمية.</span>
-            </label>
-          </fieldset>
-
-          <div class="space-y-3 border-t border-slate-200 pt-5">
-            <button type="submit" id="submitBtn" class="inline-flex min-h-[56px] w-full items-center justify-center gap-2 rounded-xl bg-amber-400 px-6 py-4 text-base font-black text-slate-950 shadow-lg transition hover:bg-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 active:scale-[.99] disabled:cursor-not-allowed disabled:opacity-60 sm:text-lg">
-              <svg class="icon" aria-hidden="true"><use href="#i-check-circle"></use></svg>
-              <span id="submitBtnText">حفظ طلب تجريبي على هذا الجهاز</span>
-            </button>
-            <p class="text-center text-[11px] leading-6 text-slate-500">
-              يُحفظ الاسم ورقم الهاتف فقط داخل متصفحك. يمكنك حذف الطلب في أي وقت.
-            </p>
-            <p id="formStatus" class="sr-only" role="status" aria-live="polite"></p>
-          </div>
-
-        </form>
+        <button type="button" class="min-h-[44px] shrink-0 rounded-lg px-2 text-sm font-bold text-slate-500 transition hover:bg-slate-100 hover:text-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-800" data-action="back-home">الرئيسية</button>
       </div>
+
+      <div class="mb-5 rounded-xl border border-amber-200 bg-amber-50 p-3 text-xs leading-6 text-amber-900" role="note">
+        <strong>تنبيه لحماية بياناتك:</strong>
+        هذه نسخة تجريبية تعمل داخل المتصفح فقط. لا تدخل الرقم القومي أو ترفع صورة البطاقة الحقيقية؛ لا يوجد خادم آمن لاستقبال المستندات حتى الآن.
+      </div>
+
+      <form id="membershipForm" class="space-y-5" autocomplete="on">
+
+        <div>
+          <label for="centerSelect" class="mb-2 block text-sm font-bold">المركز التنظيمي *</label>
+          <select id="centerSelect" name="center" required class="field">
+            <option value="" disabled selected>-- اختر المركز التابع له --</option>
+            <option>مركز بركة السبع</option>
+            <option>مركز قويسنا</option>
+            <option>مركز أشمون</option>
+            <option>مركز منوف</option>
+            <option>مركز سرس الليان</option>
+            <option>مركز الباجور</option>
+            <option>مركز تلا</option>
+            <option>مركز الشهداء</option>
+            <option>مركز شبين الكوم</option>
+            <option>مركز السادات</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="governorate" class="mb-2 block text-sm font-bold">المحافظة</label>
+          <input id="governorate" name="governorate" value="محافظة المنوفية" disabled class="field bg-slate-100 font-bold">
+        </div>
+
+        <div>
+          <label for="fullName" class="mb-2 block text-sm font-bold">الاسم بالكامل *</label>
+          <input id="fullName" name="fullName" required maxlength="100" autocomplete="name" placeholder="أدخل اسمك بالكامل" class="field">
+        </div>
+
+        <div>
+          <label for="phone" class="mb-2 block text-sm font-bold">رقم الهاتف المحمول *</label>
+          <input type="tel" id="phone" name="phone" required inputmode="numeric" maxlength="11" pattern="01[0125][0-9]{8}" autocomplete="tel" placeholder="01xxxxxxxxx" class="field" dir="ltr" title="11 رقمًا يبدأ بـ 010 أو 011 أو 012 أو 015">
+        </div>
+
+        <div>
+          <label for="village" class="mb-2 block text-sm font-bold">القرية / المنطقة</label>
+          <input id="village" name="village" maxlength="100" autocomplete="address-level3" placeholder="اسم القرية أو المنطقة" class="field">
+        </div>
+
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+
+          <div class="rounded-xl border bg-slate-50 p-4">
+            <label for="personalPhoto" class="mb-2 block text-sm font-bold">
+              <svg class="icon text-blue-800" aria-hidden="true"><use href="#i-user"></use></svg>
+              الصورة الشخصية
+            </label>
+            <input id="personalPhoto" name="personalPhoto" type="file" accept="image/*" class="peer sr-only">
+            <label for="personalPhoto" class="flex cursor-pointer items-center justify-center gap-2 rounded-lg border-2 border-dashed border-blue-300 bg-white p-4 font-bold text-blue-900 transition hover:bg-blue-50 peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-blue-800">
+              <svg class="icon" aria-hidden="true"><use href="#i-upload"></use></svg>
+              إدراج صورة شخصية
+            </label>
+            <div id="personalPhotoPreviewWrap" class="mt-3" hidden>
+              <img id="personalPhotoPreview" alt="معاينة الصورة الشخصية" class="mx-auto h-32 w-28 rounded-lg border object-cover">
+              <button type="button" class="mt-2 text-[11px] font-bold text-red-700 hover:underline" data-action="clear-photo" data-target="personalPhoto">إزالة الصورة</button>
+            </div>
+          </div>
+
+          <div class="rounded-xl border bg-slate-50 p-4">
+            <label for="idCardPhoto" class="mb-2 block text-sm font-bold">
+              <svg class="icon text-blue-800" aria-hidden="true"><use href="#i-id-card"></use></svg>
+              صورة بطاقة الرقم القومي
+            </label>
+            <input id="idCardPhoto" name="idCardPhoto" type="file" accept="image/*" class="peer sr-only">
+            <label for="idCardPhoto" class="flex cursor-pointer items-center justify-center gap-2 rounded-lg border-2 border-dashed border-blue-300 bg-white p-4 font-bold text-blue-900 transition hover:bg-blue-50 peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-blue-800">
+              <svg class="icon" aria-hidden="true"><use href="#i-upload"></use></svg>
+              إدراج صورة البطاقة
+            </label>
+            <div id="idCardPhotoPreviewWrap" class="mt-3" hidden>
+              <img id="idCardPhotoPreview" alt="معاينة صورة بطاقة الرقم القومي" class="mx-auto h-32 w-48 rounded-lg border bg-white object-contain">
+              <button type="button" class="mt-2 text-[11px] font-bold text-red-700 hover:underline" data-action="clear-photo" data-target="idCardPhoto">إزالة الصورة</button>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="rounded-lg border border-amber-200 bg-amber-50 p-3 text-xs leading-6 text-amber-800">
+          الصور للمعاينة داخل الصفحة فقط، ولا تُرفع إلى خادم أو تُحفظ ضمن سجل الطلبات. لا تستخدم صور بطاقة حقيقية قبل ربط الموقع بخادم آمن ومعتمد.
+        </p>
+
+        <div>
+          <label for="notes" class="mb-2 block text-sm font-bold">ملاحظات (اختياري)</label>
+          <textarea id="notes" name="notes" maxlength="500" rows="3" class="field resize-y" placeholder="أي معلومات إضافية"></textarea>
+        </div>
+
+        <label class="flex items-start gap-2 text-xs leading-6 text-slate-600">
+          <input type="checkbox" id="consent" name="consent" required class="mt-1">
+          <span>أوافق على استخدام بيانات التواصل التي أدخلتها لغرض متابعة طلب التواصل، وأفهم أن هذه نسخة تجريبية محلية وليست قناة تسجيل رسمية.</span>
+        </label>
+
+        <button type="submit" id="submitBtn" class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-amber-500 p-4 text-lg font-black text-slate-950 shadow-lg transition hover:bg-amber-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 active:scale-[.99] disabled:cursor-not-allowed disabled:opacity-60">
+          <svg class="icon" aria-hidden="true"><use href="#i-check-circle"></use></svg>
+          <span id="submitBtnText">حفظ طلب تجريبي على هذا الجهاز</span>
+        </button>
+
+        <p id="formStatus" class="sr-only" role="status" aria-live="polite"></p>
+
+      </form>
     </section>
 
     <!-- ==================== Success ==================== -->

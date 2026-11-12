@@ -23,10 +23,6 @@ html {
 
 body {
   overflow-x: hidden;
-  background-image:
-    radial-gradient(60rem 30rem at 100% -10%, rgba(30, 58, 138, 0.06), transparent 60%),
-    radial-gradient(50rem 25rem at 0% 0%, rgba(153, 27, 27, 0.05), transparent 55%);
-  background-attachment: fixed;
 }
 
 body.modal-open {
@@ -83,7 +79,8 @@ body.modal-open {
 }
 
 .waving-motto {
-  animation: mottoWave 3.6s ease-in-out infinite;
+  display: inline-block;
+  animation: mottoWave 3.2s ease-in-out infinite;
 }
 
 @keyframes mottoWave {
@@ -92,13 +89,13 @@ body.modal-open {
     transform: translateX(0);
   }
   25% {
-    transform: translateX(-5px) rotate(-0.6deg);
+    transform: translateX(-7px) rotate(-1deg);
   }
   50% {
     transform: translateX(0);
   }
   75% {
-    transform: translateX(5px) rotate(0.6deg);
+    transform: translateX(7px) rotate(1deg);
   }
 }
 
@@ -107,11 +104,11 @@ body.modal-open {
 .field {
   display: block;
   width: 100%;
-  min-height: 48px;
+  min-height: 46px;
   border: 1px solid #cbd5e1;
   border-radius: 0.75rem;
   background-color: #f8fafc;
-  padding: 0.7rem 0.85rem;
+  padding: 0.65rem 0.85rem;
   font-size: 0.95rem;
   line-height: 1.6;
   color: #1e293b;
@@ -157,37 +154,7 @@ select.field {
 
 /* File inputs -------------------------------------------------------------- */
 
-.file-input {
-  display: block;
-  width: 100%;
-  font-size: 0.75rem;
-  color: #475569;
-  cursor: pointer;
-}
-
-.file-input::file-selector-button {
-  margin-inline-end: 0.65rem;
-  min-height: 42px;
-  border: 0;
-  border-radius: 0.6rem;
-  background: #1e3a8a;
-  padding: 0.5rem 0.9rem;
-  color: #fff;
-  font-family: inherit;
-  font-size: 0.75rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: background-color 0.15s ease;
-}
-
-.file-input::file-selector-button:hover {
-  background: #172554;
-}
-
-.file-input:focus-visible::file-selector-button {
-  outline: 2px solid #b45309;
-  outline-offset: 2px;
-}
+/* File inputs are visually replaced by the dashed upload boxes in index.html. */
 
 /* Status badges ------------------------------------------------------------ */
 
@@ -563,8 +530,7 @@ select.field {
 /* Mobile refinements ------------------------------------------------------- */
 
 @media (max-width: 640px) {
-  .field,
-  .file-input {
+  .field {
     font-size: 16px; /* prevents iOS Safari from zooming into inputs */
   }
 
