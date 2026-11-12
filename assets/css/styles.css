@@ -47,6 +47,10 @@ body.modal-open {
   outline-offset: 2px;
 }
 
+[tabindex='-1']:focus {
+  outline: none;
+}
+
 /* Utility helpers ---------------------------------------------------------- */
 
 .svg-sprite {
